@@ -1,0 +1,40 @@
+nav {
+    display :flex;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+}
+section {
+    height: 100vh;
+}
+h1{
+    text-align: center;
+}
+#technology img{
+    padding: 0 10px;
+    border-radius: 30px;
+    height: 400px;
+    object-fit: cover;
+}
+figcaption{
+    text-align: center;
+}
+#gallery img, 
+#menu li img{
+    padding: 0 10px;
+    border-radius: 30px;
+    height: 200px;
+    object-fit: cover;
+}
+#technology div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#technology p{
+    width: 400px;
+}
+#menu ul li{
+    list-style-type: none;
+    display:  inline-flex;
+}
