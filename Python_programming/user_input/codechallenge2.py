@@ -14,3 +14,9 @@
 # for book in favorite_books:
 #     print (book)
 
+person_details = {}
+person_details["name"] = input("What is your name: ")
+person_details["age"] = input("How old are you: ")
+person_details["favorite_color"] = input("What is your favorite color: ")
+
+print (person_details)
