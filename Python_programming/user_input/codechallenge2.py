@@ -1,4 +1,4 @@
-# integers = input("Enter integers separated by spaces")
+# integers = input("Enter integers")
 # integerLists = list(integers)
  
  
@@ -14,9 +14,18 @@
 # for book in favorite_books:
 #     print (book)
 
-person_details = {}
-person_details["name"] = input("What is your name: ")
-person_details["age"] = input("How old are you: ")
-person_details["favorite_color"] = input("What is your favorite color: ")
+# person_details = {}
+# person_details["name"] = input("What is your name: ")
+# person_details["age"] = input("How old are you: ")
+# person_details["favorite_color"] = input("What is your favorite color: ")
 
-print (person_details)
+# print (person_details)
+
+integer1 = input("Enter integers")
+integer_set = set(integer1)
+print(integer_set)
+integer2 = input("Enter integers")
+integer_set2 = set(integer2)
+print (integer_set2)
+
+print(integer_set2.intersection(integer_set))
