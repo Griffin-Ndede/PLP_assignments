@@ -21,11 +21,15 @@
 
 # print (person_details)
 
-integer1 = input("Enter integers")
-integer_set = set(integer1)
-print(integer_set)
-integer2 = input("Enter integers")
-integer_set2 = set(integer2)
-print (integer_set2)
+# integer1 = input("Enter integers")
+# integer_set = set(integer1)
+# print(integer_set)
+# integer2 = input("Enter integers")
+# integer_set2 = set(integer2)
+# print (integer_set2)
 
-print(integer_set2.intersection(integer_set))
+# print(integer_set2.intersection(integer_set))
+
+words = ["come", "go", "peter", "bring", "Monday", "water"]
+odd_number_characters = [word for word in words if len(word) % 2 != 0 ]
+print(odd_number_characters)
