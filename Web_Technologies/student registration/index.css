@@ -1,0 +1,51 @@
+/* Styles for the form */
+form {
+    max-width: 400px; /* Maximum width of the form */
+    margin: 0 auto; /* Center the form */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Add a border around the form */
+    border-radius: 5px; /* Add rounded corners to the form */
+    background-color: #f9f9f9; /* Light gray background color */
+}
+
+/* Styles for form elements */
+form input, form select {
+    width: 100%; /* Make input and select elements full width */
+    padding: 10px; /* Add padding inside the elements */
+    margin-bottom: 15px; /* Add margin below each element */
+    border: 1px solid #ccc; /* Add a border around the elements */
+    border-radius: 4px; /* Add rounded corners */
+}
+
+/* Style for the form labels */
+form label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Add a small margin below each label */
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Style for the buttons */
+form button {
+    padding: 10px 20px; /* Add padding inside the buttons */
+    margin-right: 10px; /* Add a small margin to the right of each button */
+    border: none; /* Remove border from buttons */
+    border-radius: 4px; /* Add rounded corners to buttons */
+    background-color: #4CAF50; /* Green background color for the register button */
+    color: white; /* White text color for buttons */
+    cursor: pointer; /* Change cursor to pointer when hovering over buttons */
+}
+
+/* Hover effect for the register button */
+form button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Style for the cancel button */
+form button[type="reset"] {
+    background-color: #f44336; /* Red background color for the cancel button */
+}
+
+/* Hover effect for the cancel button */
+form button[type="reset"]:hover {
+    background-color: #d32f2f; /* Darker red when hovered */
+}

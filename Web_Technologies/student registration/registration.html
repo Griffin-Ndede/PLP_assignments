@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="https://example.com/submit" method="post">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> <br><br>
+        
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required> <br><br>
+        
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select> <br><br>
+        
+        <!-- Address -->
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required> <br><br>
+        
+        <!-- Telephone -->
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" pattern="[0-9]+" required> <br><br>
+        
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required> <br><br>
+        
+        <!-- Course -->
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required> <br><br>
+        
+        <!-- Buttons -->
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+
+</html>
