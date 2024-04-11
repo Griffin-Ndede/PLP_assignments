@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for sections */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    background-color: #ff4900; /* Green background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* About section styling */
+.about {
+    padding: 40px 20px;
+}
+
+.about .profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Skills section styling */
+.skills {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 40px 20px;
+}
+
+.skills ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+.skills li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Border around list items */
+}
+
+/* Projects section styling */
+.projects {
+    padding: 40px 20px;
+}
+
+.project {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Contact section styling */
+.contact {
+    background-color: #ff4900; /* Green background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Adjusting project cards for smaller screens */
+    .project {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
