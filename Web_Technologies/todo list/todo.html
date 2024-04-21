@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href = "todo.css">
+    <link rel="stylesheet" href="todo.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,21 +12,18 @@
             <img src="" alt="" class="heading_img">
             <h1 class="heading_title">To do list</h1>
         </div>
-            <form class="form"></form>
-            <div>
-                <label for="todo" class="form_label"></label>
-                <input 
-                    placeholder="Today I am going to..."
-                    class="form__input" 
-                    type="text" 
-                    id="todo" 
-                    name="to-do" 
-                    size="30" required>
-                <button class="button"><span>Submit</span></button>
-                <ul class="toDoList">
-
-                </ul>
-            </div>
+        <form class="form">
+            <label for="todo" class="form_label"></label>
+            <input 
+                placeholder="Today I am going to..."
+                class="form__input" 
+                type="text" 
+                id="todo" 
+                name="to-do" 
+                size="30" required>
+            <button class="button"><span>Submit</span></button>
+        </form>
+        <ul class="toDoList"></ul>
     </section>
 
     <script src="todo.js"></script>
