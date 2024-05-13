@@ -46,11 +46,39 @@
 # std.name = "Ian"
 # print(std.schoolName, std.__name, std.age)
 
-class A():
-    def __init__(self,count=100):
-        self.count=count
-obj1=A()
-obj2=A(102)
+# class A():
+#     def __init__(self,count=100):
+#         self.count=count
+# obj1=A()
+# obj2=A(102)
 
-print(obj1.count)
-print(obj2.count)
+# print(obj1.count)
+# print(obj2.count)
+
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
+
+#   def printname(self):
+#     print(self.firstname, self.lastname)
+
+# class Student(Person):
+#     def __init__(self, fname, lname, year):
+#         super().__init__(fname, lname)
+#         self.graduationYear = year
+    
+#     def welcome(self):
+#         print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationYear)
+# #Use the Person class to create an object, and then execute the printname method:
+# x = Student("Griffin", "Omondi", 2022)
+# x.welcome()
+
+def age():
+    age = int(input("How old are you?:"))
+    if age >= 18:
+        print (f"You are old enough to be drinking alcohol since you are {age} years old")
+    else:
+        print("You should not be anywhere near alcohol")
+
+print(age())
