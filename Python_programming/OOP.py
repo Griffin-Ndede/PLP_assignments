@@ -34,14 +34,23 @@
 # # print (emp.company_info())
 
 
-class Student:
-    schoolName = "PLP Academy"
+# class Student:
+#     schoolName = "PLP Academy"
 
-    def __init__(self, name, age):
-        self.__name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         self.__name = name
+#         self.age = age
 
-std = Student("Griffin", 25)
-std.age = 30
-std.name = "Ian"
-print(std.schoolName, std.__name, std.age)
+# std = Student("Griffin", 25)
+# std.age = 30
+# std.name = "Ian"
+# print(std.schoolName, std.__name, std.age)
+
+class A():
+    def __init__(self,count=100):
+        self.count=count
+obj1=A()
+obj2=A(102)
+
+print(obj1.count)
+print(obj2.count)
