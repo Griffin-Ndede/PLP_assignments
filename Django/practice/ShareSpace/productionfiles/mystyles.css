@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 body {
+  margin:0;
   font: 600 18px 'Source Sans Pro', sans-serif;
   letter-spacing: 0.64px;
   color: #585d74;
@@ -26,12 +27,14 @@ body {
   border-radius: 5px;
   box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23); 
   padding: 20px;
-  margin-left: 30px;
 }
 .mycard h1 {
   text-align: center;
   color:#ffffff;
   margin:20px 0 60px 0;
+}
+.mycard p{
+    text-align: center;
 }
 ul {
   list-style-type: none;
@@ -50,8 +53,6 @@ li {
   padding: 15px;
   padding-left: 70px;
   margin-top: 5px;
-  width: 300px;
-  margin-left: 20px;
 }
 li:hover {
   transform: scale(1.1);
