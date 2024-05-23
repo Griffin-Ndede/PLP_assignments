@@ -13,13 +13,12 @@
     {% endblock %}
       
     {% block content %}
-        <div class="mycard">
+        <div >
             {% for category in categories %}
-            <h1>{{ category.name }}</h1>
+            <h2>{{ category.name }}</h2>
             <ul>
                 {% for product in category.product_set.all %}
-                    <li>{{ product.name }}</li>
-                    <!-- You can display other product information here -->
+                <li onclick="window.location = 'productdetails/{{ product.id }}'">{{ product.name }}</li>
                 {% endfor %}
             </ul>
             {% endfor %}

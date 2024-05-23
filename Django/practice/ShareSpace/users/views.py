@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from .models import User, Category
+from .models import User, Category, Product
 
 def members(request):
     mymembers = User.objects.all().values()
@@ -37,3 +37,11 @@ def categories(request):
         "categories": categories
     }
     return HttpResponse(template.render(context, request))
+
+def productdetails(request, id):
+   productdetails = Product.objects.get(id=id)
+   template = loader.get_template("productdetails.html")
+   context = {
+      "productdetails": productdetails
+   }
+   return HttpResponse(template.render(context, request))
