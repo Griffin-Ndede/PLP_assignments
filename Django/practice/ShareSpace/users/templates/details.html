@@ -15,7 +15,8 @@
   {% block content %}
     <div class="mycard">
       <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
-      <p>Phone {{ mymember.phone }}</p>
+      <p>Phone: {{ mymember.phone }}</p>
+      <p>Email address: {{mymember.email}}</p>
       <p>Member since: {{ mymember.joined_date }}</p>
     </div>
   {% endblock %}  
