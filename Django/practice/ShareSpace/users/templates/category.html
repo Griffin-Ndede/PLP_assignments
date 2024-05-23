@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "master.html" %}
+
+    {% block title %}
+        Details about {{ category.name }}
+    {% endblock %}
+      
+    {% block content %}
+        <div class="mycard">
+            {% for category in categories %}
+            <h1>{{ category.name }}</h1>
+            <ul>
+                {% for product in category.product_set.all %}
+                    <li>{{ product.name }}</li>
+                    <!-- You can display other product information here -->
+                {% endfor %}
+            </ul>
+            {% endfor %}
+        </div>
+    {% endblock %}
+    
+</body>
+</html>

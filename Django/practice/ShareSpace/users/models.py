@@ -10,6 +10,12 @@ class User(models.Model):
 
     def __str__(self):
         return f"{self.firstname} {self.lastname}"
+    
+class Category(models.Model):
+    name= models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
 
 class Product(models.Model):
     name= models.CharField(max_length=255)
@@ -19,13 +25,10 @@ class Product(models.Model):
 
     # one to many relationships
     users = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.name
 
-class Category(models.Model):
-    name= models.CharField(max_length=255)
 
-    # one to many relationships
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
   

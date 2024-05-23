@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-from .models import User, Product
+from .models import User, Category
 
 def members(request):
     mymembers = User.objects.all().values()
@@ -29,3 +29,11 @@ def testing(request):
     'fruits': ['Apple', 'Banana', 'Cherry'],   
   }
   return HttpResponse(template.render(context, request))
+
+def categories(request):
+    categories = Category.objects.all() 
+    template = loader.get_template("category.html")
+    context = {
+        "categories": categories
+    }
+    return HttpResponse(template.render(context, request))
