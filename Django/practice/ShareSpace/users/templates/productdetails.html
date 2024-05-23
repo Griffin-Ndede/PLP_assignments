@@ -16,8 +16,10 @@
     {% block content %}
     <div class="mycard">
       <h1>Product details</h1>
-      <p>{{productdetails.name}}</p>
+      <h2>{{productdetails.name}}</h2>
+      <p>Date added: {{productdetails.date_added}}</p>
       <p>{{productdetails.description}}</p>
+
     </div>
   {% endblock %}
 </body>
