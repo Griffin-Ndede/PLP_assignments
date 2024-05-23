@@ -13,7 +13,6 @@ class User(models.Model):
 
 class Product(models.Model):
     name= models.CharField(max_length=255)
-    category = models.CharField(max_length=255)
     description = models.TextField(null=True, blank=True)
     date_added = models.DateField(null=True)
 
@@ -21,6 +20,12 @@ class Product(models.Model):
     # one to many relationships
     users = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
-
     def __str__(self):
         return self.name
+
+class Category(models.Model):
+    name= models.CharField(max_length=255)
+
+    # one to many relationships
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
+  

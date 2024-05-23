@@ -9,6 +9,6 @@ class MemberAdmin(admin.ModelAdmin):
 admin.site.register(User, MemberAdmin)
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ("name", "category", "date_added")
+    list_display = ("name", "description" , "date_added")
 
 admin.site.register(Product, ProductAdmin)
